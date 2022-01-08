@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>covid patient tracking </title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="content">
+<form onsubmit="handleSubmit()" class="form" >
+<div class="field">
+    <label for="firstname">First Name:</label>
+    <input class="input" type="text" id="firstName" required/>
+</div>
+
+<div class="field">
+    <label for="lastname">Last Name:</label>
+    <input class="input" type="text" id="lastName" required/>
+</div>
+
+<div class="field">
+    <label for="email">Email:</label>
+    <input class="input" type="email" id="email" required />
+</div>
+
+<div class="field">
+    <label >Gender:</label>
+    <select required name="male,female" id="gender" class="input">
+        <option value>Select your gender</option>
+        <option value="male" name="male" >Male</option>
+        <option value="female" name="female" >Female</option>
+    </select>
+</div>
+<p><input type="checkbox" required id="travel" value="No" /> <span>Recently came into Nigeria in the last 14 days?</span></p>
+
+<div class="submit-bd">
+    <button id="submit" class="submit">Submit</button>
+</div>
+
+</form>
+
+
+<table class="list" id="patientId">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email address</th>
+        <th>Gender</th>
+        <th>Came in Nigeria within the last 14days?</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <!-- <td>Habeeb Makusota</td>
+            <td>h.makusota@yahoo.com</td>
+            <td>male</td>
+            <td>No</td>
+            <td><button type="button" class="edit">Edit</button></td>
+            <td><button type="button" class="delete">Delete</button></td> -->
+        </tr>
+    </tbody>
+</table>
+
+
+</div>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>

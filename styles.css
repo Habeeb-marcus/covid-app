@@ -1,0 +1,89 @@
+form {
+    padding: 15px 20px; 
+    background-color: beige;
+    width: 450px;
+    margin: 40px auto;
+}
+
+.field {
+    margin-top: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input {
+    width: 70%;
+    height: 20px;
+}
+
+.content {
+    justify-content: center;
+    /* display: flex; */
+    flex-direction: column;
+}
+
+.submit-bd {
+    text-align: center;
+    margin: 30px auto;
+  
+}
+
+.submit {
+    width: 80%;
+    height: 30px;
+}
+
+button, .submit {
+    /* border: none; */
+   border: 1px solid #038b8b;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    padding: 0.2rem 0.4rem;
+    cursor: pointer;
+}
+
+button:hover, .submit:hover{
+    background: cadetblue;
+    color: #fff;
+}
+
+table {
+    border: 3px solid;
+    max-width: 800px;
+    border-collapse: collapse;
+    margin: 3rem auto;
+}
+
+thead th {
+    border: 1px solid;
+    text-align: center;
+    background: #d4d430;
+    color: #038b8b;
+}
+
+thead th:nth-child(1) {
+    width: 20%;
+}
+thead th:nth-child(2) {
+    width: 30%;
+}
+thead th:nth-child(3) {
+    width: 10%;
+}
+thead th:nth-child(4) {
+    width: 20%;
+}
+thead th:nth-child(5) {
+    width: 10%;
+}
+thead th:nth-child(6) {
+    width: 10%;
+}
+
+td {
+    text-align: center;
+    border: 1px solid;
+    padding: 0.3rem;
+}
