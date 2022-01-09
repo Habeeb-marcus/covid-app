@@ -12,13 +12,24 @@ var selectedRow = null
 const handleSubmit = (e) => {
   e.preventDefault();
   var formData = readFormData();
-  if(selectedRow === null ) {
-      insertNewRecord(formData);
-  } else {
-    updateRecord(formData)
-  }
-//  resetForm()
-form.reset()
+        // insertNewRecord(formData);
+
+        if (
+          email.value === "" ||
+          gender.value === "" ||
+          lastName.value === "" ||
+          firstName.value === "" 
+        ) {
+          alert("all input field must be filled");
+        } else {
+          if (selectedRow === null) {
+            insertNewRecord(formData);
+          } else {
+            updateRecord(formData);
+          }
+          resetForm();
+          form.reset();
+        }
 };
 
 gender.addEventListener("change", (e) => {

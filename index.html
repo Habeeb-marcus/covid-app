@@ -11,7 +11,7 @@
     <div class="content">
 <form onsubmit="handleSubmit()" class="form" >
 <div class="field">
-    <label for="firstname">First Name:</label>
+    <label for="firstname">First Name:</label><label class="validation-error hide" id="firstNameValidationError">This field is required</label>
     <input class="input" type="text" id="firstName" required/>
 </div>
 
@@ -27,13 +27,13 @@
 
 <div class="field">
     <label >Gender:</label>
-    <select required name="male,female" id="gender" class="input">
+    <select  name="male,female" id="gender" class="input" required>
         <option value>Select your gender</option>
         <option value="male" name="male" >Male</option>
         <option value="female" name="female" >Female</option>
     </select>
 </div>
-<p><input type="checkbox" required id="travel" value="No" /> <span>Recently came into Nigeria in the last 14 days?</span></p>
+<p><input type="checkbox" required id="travel" value="No" required/> <span>Recently came into Nigeria in the last 14 days?</span></p>
 
 <div class="submit-bd">
     <button id="submit" class="submit">Submit</button>

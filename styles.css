@@ -87,3 +87,7 @@ td {
     border: 1px solid;
     padding: 0.3rem;
 }
+
+.hide {
+    display: none;
+}
